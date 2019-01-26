@@ -1,0 +1,1479 @@
+<!DOCTYPE html>
+
+
+
+  
+
+
+<html class="theme-next pisces use-motion" lang="zh-Hans">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.1.4" rel="stylesheet" type="text/css" />
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=5.1.4">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=5.1.4" color="#222">
+
+
+
+
+
+  <meta name="keywords" content="视频下载," />
+
+
+
+
+
+
+
+
+
+
+<meta name="description" content="之前这篇教程：教你下载被迅雷&amp;amp;百度云屏蔽的资源
+可能解决了你种子磁力的下载问题。
+但是那些网页上播放的视频怎么办呢？比如微博、美拍、梨视频、搜狐视频等等…
+今天阿虚就来教教怎么下载网页视频。
+教程较长，但希望你认真看看，绝对受益匪浅。">
+<meta property="og:type" content="article">
+<meta property="og:title" content="看完这篇教程，再没有下载不了的网页视频">
+<meta property="og:url" content="http://axutongxue.github.io/2018/01/27/看完这篇教程，再没有下载不了的网页视频/index.html">
+<meta property="og:site_name" content="阿虚同学的博客">
+<meta property="og:description" content="之前这篇教程：教你下载被迅雷&amp;amp;百度云屏蔽的资源
+可能解决了你种子磁力的下载问题。
+但是那些网页上播放的视频怎么办呢？比如微博、美拍、梨视频、搜狐视频等等…
+今天阿虚就来教教怎么下载网页视频。
+教程较长，但希望你认真看看，绝对受益匪浅。">
+<meta property="og:image" content="https://ws1.sinaimg.cn/large/6f936308gy1fzk2uopthij20r002yq2w.jpg">
+<meta property="og:image" content="https://ws1.sinaimg.cn/large/6f936308gy1fzkftyixauj20fv0g3tj4.jpg">
+<meta property="og:image" content="https://ws1.sinaimg.cn/large/6f936308gy1fzkfseow4aj21170lxn61.jpg">
+<meta property="og:image" content="https://ws1.sinaimg.cn/large/6f936308gy1fzk6r9ejx9j210m0mvjzu.jpg">
+<meta property="og:image" content="https://ws1.sinaimg.cn/large/6f936308gy1fzk51jfgufj20pn0h7mxr.jpg">
+<meta property="og:image" content="https://ws1.sinaimg.cn/large/6f936308gy1fzk5jpk9g6g20go093e06.gif">
+<meta property="og:image" content="https://ws1.sinaimg.cn/large/6f936308gy1fzk9czyh4lj20e00duaat.jpg">
+<meta property="og:image" content="https://ws1.sinaimg.cn/large/6f936308gy1fzk6zqhnakj20i30fytez.jpg">
+<meta property="og:image" content="https://ws1.sinaimg.cn/large/6f936308gy1fzk74oltxsj20el0eugmf.jpg">
+<meta property="og:image" content="https://ws1.sinaimg.cn/large/6f936308gy1fzk78i2ewgj21040lj7iw.jpg">
+<meta property="og:image" content="https://ws1.sinaimg.cn/large/6f936308gy1fzk7bgoj89j20el0e9wf9.jpg">
+<meta property="og:image" content="https://ws1.sinaimg.cn/large/6f936308gy1fzk6zqhnakj20i30fytez.jpg">
+<meta property="og:image" content="https://ws1.sinaimg.cn/large/6f936308gy1fzk7ykpcelj20zf0lh14x.jpg">
+<meta property="og:image" content="https://ws1.sinaimg.cn/large/6f936308gy1fzk7prwg8xj20zr0ljwqg.jpg">
+<meta property="og:image" content="https://ws1.sinaimg.cn/large/6f936308gy1fzk8270a5nj20y40lm48q.jpg">
+<meta property="og:image" content="https://ws1.sinaimg.cn/large/6f936308gy1fzj7d00wcnj20bw0cdn0n.jpg">
+<meta property="og:image" content="https://ws1.sinaimg.cn/large/6f936308gy1fxbffj56jcg20h800l0eu.gif">
+<meta property="og:image" content="https://ws1.sinaimg.cn/large/6f936308gy1fze32znjv9g20430430w7.gif">
+<meta property="og:image" content="https://ws4.sinaimg.cn/large/6f936308gy1fxrbfi9onpg207402iglf.gif">
+<meta property="og:image" content="http://bbs1.people.com.cn/postImages/Y0/45/B5/00/35/1543062749237.gif">
+<meta property="og:updated_time" content="2019-01-26T16:26:04.482Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="看完这篇教程，再没有下载不了的网页视频">
+<meta name="twitter:description" content="之前这篇教程：教你下载被迅雷&amp;amp;百度云屏蔽的资源
+可能解决了你种子磁力的下载问题。
+但是那些网页上播放的视频怎么办呢？比如微博、美拍、梨视频、搜狐视频等等…
+今天阿虚就来教教怎么下载网页视频。
+教程较长，但希望你认真看看，绝对受益匪浅。">
+<meta name="twitter:image" content="https://ws1.sinaimg.cn/large/6f936308gy1fzk2uopthij20r002yq2w.jpg">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Pisces',
+    version: '5.1.4',
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: true,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    duoshuo: {
+      userId: '0',
+      author: '博主'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="http://axutongxue.github.io/2018/01/27/看完这篇教程，再没有下载不了的网页视频/"/>
+
+
+
+
+
+  <title>看完这篇教程，再没有下载不了的网页视频 | 阿虚同学的博客</title>
+  
+
+
+
+
+
+  <script type="text/javascript">
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "https://hm.baidu.com/hm.js?15f9d2a83bdb84460a5c1b931099b833";
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(hm, s);
+    })();
+  </script>
+
+
+
+
+  <!-- 页面点击小红心 -->
+<script type="text/javascript" src="/js/src/love.js"></script>
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/"  class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">阿虚同学的博客</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle"></p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-about">
+          <a href="/about/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-user"></i> <br />
+            
+            关于
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+            
+            标签
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
+            
+            分类
+          </a>
+        </li>
+      
+
+      
+        <li class="menu-item menu-item-search">
+          
+            <a href="javascript:;" class="popup-trigger">
+          
+            
+              <i class="menu-item-icon fa fa-search fa-fw"></i> <br />
+            
+            搜索
+          </a>
+        </li>
+      
+    </ul>
+  
+
+  
+    <div class="site-search">
+      
+  <div class="popup search-popup local-search-popup">
+  <div class="local-search-header clearfix">
+    <span class="search-icon">
+      <i class="fa fa-search"></i>
+    </span>
+    <span class="popup-btn-close">
+      <i class="fa fa-times-circle"></i>
+    </span>
+    <div class="local-search-input-wrapper">
+      <input autocomplete="off"
+             placeholder="搜索..." spellcheck="false"
+             type="text" id="local-search-input">
+    </div>
+  </div>
+  <div id="local-search-result"></div>
+</div>
+
+
+
+    </div>
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://axutongxue.github.io/2018/01/27/看完这篇教程，再没有下载不了的网页视频/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="砺心">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/阿虚头像.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="阿虚同学的博客">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">看完这篇教程，再没有下载不了的网页视频</h1>
+        
+
+        <div class="post-meta">
+        
+                    
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-01-27T00:00:00+08:00">
+                2018-01-27
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/公众号/" itemprop="url" rel="index">
+                    <span itemprop="name">公众号</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2018/01/27/看完这篇教程，再没有下载不了的网页视频/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count valine-comment-count" data-xid="/2018/01/27/看完这篇教程，再没有下载不了的网页视频/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+
+          
+            <span class="post-meta-divider">|</span>
+            <span class="page-pv"><i class="fa fa-file-o"></i> 阅读数
+            <span class="busuanzi-value" id="busuanzi_value_page_pv" ></span>
+            </span>
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <p>之前这篇教程：<a href="https://mp.weixin.qq.com/s/Sobuvc8J56dryQ5jeLfyMw" target="_blank" rel="external">教你下载被迅雷&amp;百度云屏蔽的资源</a></p>
+<p>可能解决了你种子磁力的下载问题。</p>
+<p>但是那些网页上播放的视频怎么办呢？比如微博、美拍、梨视频、搜狐视频等等…</p>
+<p>今天阿虚就来教教怎么下载网页视频。</p>
+<p>教程较长，但希望你认真看看，绝对受益匪浅。</p>
+<a id="more"></a>
+<h3 id="目录"><a href="#目录" class="headerlink" title="目录"></a>目录</h3><ul>
+<li>一、前言</li>
+<li>二、网页</li>
+<li>三、windows</li>
+<li>四、IOS</li>
+<li>五、Android</li>
+<li>六、其他</li>
+</ul>
+<h1 id="一、前言"><a href="#一、前言" class="headerlink" title="一、前言"></a>一、前言</h1><p>先说明一些问题</p>
+<h2 id="1"><a href="#1" class="headerlink" title="1."></a>1.</h2><p>国内三大视频网站由于版权问题，第三方下载网站支持的不是很好，建议使用官方客户端下载视频后再进行视频转码</p>
+<p>具体见我之前写的教程：<a href="https://mp.weixin.qq.com/s/HWRuOQYc7Cohn8_Y8IMCVA" target="_blank" rel="external">腾讯、优酷、爱奇艺，视频下载与转码</a></p>
+<p>当然，你可能会遇到因为系统原因（Mac OS系统或Windows兼容性问题）导致的：<strong>使用不了转码软件</strong></p>
+<p>今天要讲的部分网站支持：腾讯、爱奇艺、优酷视频的解析下载，下文我会特别指出，<strong>则可以拟补转码软件用不了的问题</strong>。`</p>
+<h2 id="2"><a href="#2" class="headerlink" title="2."></a>2.</h2><p>这篇教程不教「付费视频」怎么下载，<em>比如网易云课堂、腾讯课堂这类付费视频</em>。</p>
+<p>但是腾讯、优酷、爱奇艺这类VIP视频站，只要能成功在线播放，就是能下载的。</p>
+<p>方法是先用这篇教程《<a href="https://mp.weixin.qq.com/s/B25UhbcVN3CHrs2pkTcuTw" target="_blank" rel="external">所有视频网站，VIP视频免费看</a>》中提到的VIP视频解析站，找到可在线播放源，之后用IDM直接下载即可。</p>
+<h2 id="3"><a href="#3" class="headerlink" title="3."></a>3.</h2><p>下文提到的所有Windows、Android软件我均通过网盘分享了，<strong><em>下载方式请看文末</em></strong>。</p>
+<h1 id="二、网页"><a href="#二、网页" class="headerlink" title="二、网页"></a>二、网页</h1><p>先说全平台通用的办法吧，即<strong>网页解析视频地址进行下载</strong>。</p>
+<p><img src="https://ws1.sinaimg.cn/large/6f936308gy1fzk2uopthij20r002yq2w.jpg" alt=""></p>
+<p>复制视频地址，粘贴，解析，下载。</p>
+<p>使用起来非常简单，阿虚就不多演示了，下面就说说有哪些网站。</p>
+<p>以下网页均不详细介绍，根据自己情况选用即可。</p>
+<p><em>建议优先使用多<strong>平台类</strong>视频解析下载网站。</em></p>
+<h2 id="多平台"><a href="#多平台" class="headerlink" title="多平台"></a>多平台</h2><p>国内的微博、抖音、快手、美拍、梨视频、搜狐、新浪等等视频网站都是支持的。</p>
+<p>国外的YouTube、twitter、Facebook、tumblr、instagram等等也是支持的。</p>
+<p>具体网站所支持网站有所差异，大家自己打开网站看看就知道了。</p>
+<h3 id="硕鼠"><a href="#硕鼠" class="headerlink" title="硕鼠"></a>硕鼠</h3><p>地址：<a href="http://www.flvcd.com/" target="_blank" rel="external">http://www.flvcd.com/</a></p>
+<ul>
+<li>目前持84个视频/音乐网站的解析下载</li>
+</ul>
+<h3 id="V视频下载"><a href="#V视频下载" class="headerlink" title="V视频下载"></a>V视频下载</h3><p>地址：<a href="https://www.videofk.com/" target="_blank" rel="external">https://www.videofk.com/</a></p>
+<ul>
+<li>目前持36个视频/音乐网站的解析下载</li>
+</ul>
+<h3 id="parsevideo"><a href="#parsevideo" class="headerlink" title="parsevideo"></a>parsevideo</h3><p>地址：<a href="https://www.parsevideo.com" target="_blank" rel="external">https://www.parsevideo.com</a></p>
+<ul>
+<li><p>目前持33个视频/音乐网站的解析下载</p>
+</li>
+<li><p><strong>特点：支持腾讯、优酷</strong></p>
+</li>
+</ul>
+<h3 id="视频鱼"><a href="#视频鱼" class="headerlink" title="视频鱼"></a>视频鱼</h3><p>地址：<a href="http://m.shipinyu.cn/" target="_blank" rel="external">http://m.shipinyu.cn/</a></p>
+<ul>
+<li><p>目前持30个视频/音乐网站的解析下载</p>
+</li>
+<li><p><strong>特点：支持腾讯、优酷、百度贴吧</strong></p>
+</li>
+</ul>
+<h3 id="微博党"><a href="#微博党" class="headerlink" title="微博党"></a>微博党</h3><p>地址：<a href="http://weibodang.cn/" target="_blank" rel="external">http://weibodang.cn/</a></p>
+<ul>
+<li>目前持15个视频/音乐网站的解析下载</li>
+<li><strong>特点：支持腾讯 / 土豆、优酷、知乎</strong></li>
+</ul>
+<h3 id="videograbber"><a href="#videograbber" class="headerlink" title="videograbber"></a>videograbber</h3><p>地址：<a href="https://www.videograbber.net/zh/" target="_blank" rel="external">https://www.videograbber.net/zh/</a></p>
+<h3 id="PickFrom"><a href="#PickFrom" class="headerlink" title="PickFrom"></a>PickFrom</h3><p>地址：<a href="https://zh.pickfrom.net/pickvideo" target="_blank" rel="external">https://zh.pickfrom.net/pickvideo</a> </p>
+<h2 id="单平台"><a href="#单平台" class="headerlink" title="单平台"></a>单平台</h2><h3 id="哔哩哔哩（B站）"><a href="#哔哩哔哩（B站）" class="headerlink" title="哔哩哔哩（B站）"></a>哔哩哔哩（B站）</h3><p>爱哔哩：<a href="https://www.ibilibili.com/" target="_blank" rel="external">https://www.ibilibili.com/</a></p>
+<p>看哔哩哔哩：<a href="https://www.kanbilibili.com/" target="_blank" rel="external">https://www.kanbilibili.com/</a></p>
+<p>唧唧（提供软件）：<a href="https://www.jijidown.com/" target="_blank" rel="external">https://www.jijidown.com/</a></p>
+<h3 id="音悦台"><a href="#音悦台" class="headerlink" title="音悦台"></a>音悦台</h3><p>孟坤工具箱：<a href="http://tool.mkblog.cn/yinyuetai/" target="_blank" rel="external">http://tool.mkblog.cn/yinyuetai/</a></p>
+<p>音悦台MV解析：<a href="http://www.170mv.com/tool/jiexi/" target="_blank" rel="external">http://www.170mv.com/tool/jiexi/</a></p>
+<h3 id="微博"><a href="#微博" class="headerlink" title="微博"></a>微博</h3><p>微博视频下载：<a href="http://www.weibovideo.com/" target="_blank" rel="external">http://www.weibovideo.com/</a></p>
+<h3 id="抖音-快手-等"><a href="#抖音-快手-等" class="headerlink" title="抖音 / 快手 等"></a>抖音 / 快手 等</h3><p>短视频去水印：<a href="http://dsp.zlkb.net/" target="_blank" rel="external">http://dsp.zlkb.net/</a></p>
+<ul>
+<li>支持：抖音 / 快手 / 火山短视频</li>
+</ul>
+<p>快音视：<a href="https://kuaiyinshi.com/#video-pannel" target="_blank" rel="external">https://kuaiyinshi.com/#video-pannel</a></p>
+<ul>
+<li>支持：快手 / 美拍</li>
+</ul>
+<p>iiilab：<a href="https://kuaishou.iiilab.com/" target="_blank" rel="external">https://kuaishou.iiilab.com/</a></p>
+<ul>
+<li>支持：快手/微博/微视/全民K歌/美拍/网易云/陌陌/映客/小影</li>
+</ul>
+<h3 id="国外视频网站"><a href="#国外视频网站" class="headerlink" title="国外视频网站"></a>国外视频网站</h3><p>Facebook视频下载：<a href="https://fbvideo.to/" target="_blank" rel="external">https://fbvideo.to/</a></p>
+<p>Instagram视频下载：<a href="https://www.w3toys.com/" target="_blank" rel="external">https://www.w3toys.com/</a></p>
+<p>推特视频下载：<a href="https://twdown.net/" target="_blank" rel="external">https://twdown.net/</a></p>
+<p>YouTube视频下载可以看我之前专门写过的一期教程：<a href="https://mp.weixin.qq.com/s/RvmhoAG1ZC3_o5-wGw1rSA" target="_blank" rel="external">全平台适用，YouTube视频下载方法</a></p>
+<h1 id="三、Windows"><a href="#三、Windows" class="headerlink" title="三、Windows"></a>三、Windows</h1><p>推荐一些软件</p>
+<h2 id="IDM"><a href="#IDM" class="headerlink" title="IDM"></a>IDM</h2><p>IDM能嗅探到在线播放的视频地址。</p>
+<p><strong>基本上只要能在线播放，就能用IDM下载</strong>，用IDM可以解决你90%的下载问题。</p>
+<p><img src="https://ws1.sinaimg.cn/large/6f936308gy1fzkftyixauj20fv0g3tj4.jpg" alt=""></p>
+<p>比如目前爱奇艺的付费电影——毒液：致命守护者</p>
+<p>先找到VIP视频播放站中可在线播放源后，用IDM即可直接下载。</p>
+<blockquote>
+<p>相关往期推荐阅读：<a href="https://mp.weixin.qq.com/s/B25UhbcVN3CHrs2pkTcuTw" target="_blank" rel="external">所有视频网站，VIP视频免费看</a></p>
+</blockquote>
+<p><img src="https://ws1.sinaimg.cn/large/6f936308gy1fzkfseow4aj21170lxn61.jpg" alt="若下载后是TS格式文件，直接改后缀为mp4即可"></p>
+<p>IDM使用其实很简单，你可以再看看之前一期教程：<a href="https://mp.weixin.qq.com/s/RvmhoAG1ZC3_o5-wGw1rSA" target="_blank" rel="external">全平台适用，YouTube视频下载方法</a></p>
+<p><strong>注意</strong>：如果你只是下载国内的视频，请不要按照《全平台适用，YouTube视频下载方法》那样，去设置IDM代理。</p>
+<blockquote>
+<ul>
+<li><p>阿虚提供一款自用：IDM6.30绿化破解版</p>
+</li>
+<li><p>下载方式请见文末</p>
+</li>
+</ul>
+</blockquote>
+<h2 id="维棠"><a href="#维棠" class="headerlink" title="维棠"></a>维棠</h2><p>官网：<a href="http://www.vidown.cn/" target="_blank" rel="external">http://www.vidown.cn/</a></p>
+<ul>
+<li><p><strong>特点：可以解析腾讯视频</strong></p>
+</li>
+<li><p>缺点：不能解析优酷、爱奇艺视频</p>
+</li>
+</ul>
+<p><img src="https://ws1.sinaimg.cn/large/6f936308gy1fzk6r9ejx9j210m0mvjzu.jpg" alt=""></p>
+<blockquote>
+<ul>
+<li>阿虚提供一款：维棠FLV下载器去广告绿色版</li>
+<li>下载方式请见文末</li>
+</ul>
+</blockquote>
+<h2 id="乐影下载器"><a href="#乐影下载器" class="headerlink" title="乐影下载器"></a>乐影下载器</h2><p>官网下载：<a href="https://www.cnblogs.com/iMath/p/LYYDownloader.html" target="_blank" rel="external">https://www.cnblogs.com/iMath/p/LYYDownloader.html</a></p>
+<p><img src="https://ws1.sinaimg.cn/large/6f936308gy1fzk51jfgufj20pn0h7mxr.jpg" alt=""></p>
+<h3 id="免费版支持解析："><a href="#免费版支持解析：" class="headerlink" title="免费版支持解析："></a>免费版支持解析：</h3><ul>
+<li><p>视频类：优酷、土豆、腾讯、乐视、新浪、搜狐、芒果TV、哔哩哔哩、AcFun弹幕视频网、央视网（CCTV、CNTV）、微博、秒拍、凤凰、酷6网、56网、网易、音悦Tai、爆米花、齐鲁网、激动网</p>
+</li>
+<li><p>音乐类：网易云、虾米、酷我、百度、豆瓣、荔枝FM</p>
+</li>
+<li><p>直播类：斗鱼、花椒、虎牙、火猫、一直播、熊猫、战旗、全民、看看新闻、来疯网、珠直播、ukax.cn、已付费的淘宝课程（v.xue.taobao.com）</p>
+</li>
+</ul>
+<h3 id="付费版比免费版增加了："><a href="#付费版比免费版增加了：" class="headerlink" title="付费版比免费版增加了："></a>付费版比免费版增加了：</h3><ul>
+<li>优酷和爱奇艺免费视频、PPTV免费视频、喜马拉雅FM、YY、斗鱼视频、抖音视频、今日头条西瓜视频（阳光宽频网）、老师无忧</li>
+</ul>
+<blockquote>
+<ul>
+<li>软件免费，且无广告</li>
+<li>自行到官网下载即可</li>
+</ul>
+</blockquote>
+<h2 id="硕鼠-1"><a href="#硕鼠-1" class="headerlink" title="硕鼠"></a>硕鼠</h2><p>官网：<a href="http://www.flvcd.com/" target="_blank" rel="external">http://www.flvcd.com/</a></p>
+<p>上方提到过，实际上官方还提供了windows客户端、YouTube专用客户端</p>
+<blockquote>
+<ul>
+<li>此软件为免费软件，且无广告</li>
+<li>自行到官网进行下载即可</li>
+</ul>
+</blockquote>
+<h2 id="Apowersoft视频下载王"><a href="#Apowersoft视频下载王" class="headerlink" title="Apowersoft视频下载王"></a>Apowersoft视频下载王</h2><p>本视频下载软件支持YouTube、Dailymotion、Vevo、Vimeo、Fox、AcFun、哔哩哔哩、搜狐等各大视频网站视频下载，它还可抓取HTTPS、RTMP等某些加密视频。</p>
+<p>使用教程：</p>
+<p><img src="https://ws1.sinaimg.cn/large/6f936308gy1fzk5jpk9g6g20go093e06.gif" alt=""></p>
+<blockquote>
+<ul>
+<li><strong>因国内各大公司版权原因，自6.3.6之后的版本去除了视频侦测功能。</strong></li>
+<li>阿虚这里提供一款：Apowersoft视频下载王6.3.6破解版，还能使用视频侦测功能，下载方式请见文末。</li>
+<li>下载后压缩包内有具体的安装破解教程。</li>
+</ul>
+</blockquote>
+<h1 id="四、IOS"><a href="#四、IOS" class="headerlink" title="四、IOS"></a>四、IOS</h1><p>以下APP，直接在Appstore搜索即可安装</p>
+<p><strong>阿虚只推荐一些简洁无广告的APP</strong>，那种能下载但是广告很多的APP阿虚就不予推荐了。</p>
+<h2 id="指尖浏览器"><a href="#指尖浏览器" class="headerlink" title="指尖浏览器"></a>指尖浏览器</h2><p><strong>建议尽快下载，此软件随时可能被下架</strong></p>
+<p><img src="https://ws1.sinaimg.cn/large/6f936308gy1fzk9czyh4lj20e00duaat.jpg" alt=""></p>
+<p>使用教程如下图：播放视频后右上方会弹出「下载」按钮，下载完视频后在浏览器的「文件管理」中可以重命名并导出至相册</p>
+<p><img src="https://ws1.sinaimg.cn/large/6f936308gy1fzk6zqhnakj20i30fytez.jpg" alt=""></p>
+<h2 id="Video-Saver-Pro"><a href="#Video-Saver-Pro" class="headerlink" title="Video Saver Pro+"></a>Video Saver Pro+</h2><p><img src="https://ws1.sinaimg.cn/large/6f936308gy1fzk74oltxsj20el0eugmf.jpg" alt=""></p>
+<p>简单的使用教程：</p>
+<p><img src="https://ws1.sinaimg.cn/large/6f936308gy1fzk78i2ewgj21040lj7iw.jpg" alt=""></p>
+<h2 id="Documents"><a href="#Documents" class="headerlink" title="Documents"></a>Documents</h2><p><img src="https://ws1.sinaimg.cn/large/6f936308gy1fzk7bgoj89j20el0e9wf9.jpg" alt=""></p>
+<p>Documents实际上不能嗅探并下载视频，但是其内置了一个浏览器。</p>
+<p>所以Documents的用法是：用<strong>「内置浏览器」打开</strong>教程最开始提到的各种<strong>「视频解析下载网站」</strong>来进行视频下载。</p>
+<h2 id="备注"><a href="#备注" class="headerlink" title="备注"></a>备注</h2><p>一些旧版应用自带浏览器缓存功能：</p>
+<ul>
+<li>UC浏览器10.5</li>
+<li>QQ浏览器6.1</li>
+<li>文件全能王5.4</li>
+</ul>
+<p>IOS如何安装旧版软件，具体教程见：<a href="https://mp.weixin.qq.com/s/0mPevvMblfrQtDAc2Rz4qA" target="_blank" rel="external">5分钟教你安装IOS旧版APP</a></p>
+<h1 id="五、Android"><a href="#五、Android" class="headerlink" title="五、Android"></a>五、Android</h1><p>安卓端其实使用最开始介绍的网页视频解析网站，然后下载就挺方便了。</p>
+<p>不过阿虚下面还是再推荐一些软件。</p>
+<blockquote>
+<ul>
+<li>你可以从下方阿虚给出的地址下载，挨着下载</li>
+<li>也可以看文末，阿虚给出了网盘打包下载地址</li>
+</ul>
+</blockquote>
+<h2 id="指尖浏览器-1"><a href="#指尖浏览器-1" class="headerlink" title="指尖浏览器"></a>指尖浏览器</h2><p>豌豆荚下载地址：<a href="https://www.wandoujia.com/apps/com.zhijiangsllq" target="_blank" rel="external">https://www.wandoujia.com/apps/com.zhijiangsllq</a></p>
+<p>安卓使用和IOS端如出一辙：播放视频后右上方会弹出「下载」按钮，下载完视频后在浏览器的「文件管理」中可以重命名并导出至相册</p>
+<p><img src="https://ws1.sinaimg.cn/large/6f936308gy1fzk6zqhnakj20i30fytez.jpg" alt="点击图片查看大图"></p>
+<h2 id="X浏览器"><a href="#X浏览器" class="headerlink" title="X浏览器"></a>X浏览器</h2><p>官网：<a href="http://www.xbext.com/" target="_blank" rel="external">http://www.xbext.com/</a></p>
+<p>视频嗅探下载教程：</p>
+<p><img src="https://ws1.sinaimg.cn/large/6f936308gy1fzk7ykpcelj20zf0lh14x.jpg" alt="点击图片查看大图"></p>
+<h2 id="Via浏览器"><a href="#Via浏览器" class="headerlink" title="Via浏览器"></a>Via浏览器</h2><p>酷安网下载：<a href="https://www.coolapk.com/apk/mark.via" target="_blank" rel="external">https://www.coolapk.com/apk/mark.via</a></p>
+<p>视频嗅探下载教程：</p>
+<p><img src="https://ws1.sinaimg.cn/large/6f936308gy1fzk7prwg8xj20zr0ljwqg.jpg" alt="点击图片查看大图"></p>
+<h2 id="小乖鱼"><a href="#小乖鱼" class="headerlink" title="小乖鱼"></a>小乖鱼</h2><p>酷安网下载：<a href="https://www.coolapk.com/apk/com.moage.browser" target="_blank" rel="external">https://www.coolapk.com/apk/com.moage.browser</a></p>
+<p>官方给出的使用教程：</p>
+<p><img src="https://ws1.sinaimg.cn/large/6f936308gy1fzk8270a5nj20y40lm48q.jpg" alt="点击图片查看大图"></p>
+<h1 id="Mac"><a href="#Mac" class="headerlink" title="Mac"></a>Mac</h1><p>阿虚没有Mac，也就不介绍Mac的软件了，Mac可以用阿虚最开始提到的网页端。</p>
+<blockquote>
+<ul>
+<li>另外，说一个软件：MacX Video Converter Pro</li>
+<li>MacX Video Converter Pro自带的视频下载支持300多个网站的视频，貌似国内的优酷土豆、爱奇艺和腾讯视频也都是支持的。</li>
+<li>MacX Video Converter Pro 破解版你可以自行百度</li>
+</ul>
+</blockquote>
+<h1 id="六、其他"><a href="#六、其他" class="headerlink" title="六、其他"></a>六、其他</h1><p>除了网站和软件，其实还有一些其他的方式</p>
+<h2 id="浏览器扩展-插件"><a href="#浏览器扩展-插件" class="headerlink" title="浏览器扩展 / 插件"></a>浏览器扩展 / 插件</h2><p>安装在浏览器上的插件，可以在视频播放的时候自动嗅探到视频下载地址。</p>
+<ul>
+<li>FVD Video downloader</li>
+<li>Video download helper</li>
+<li>Chrono </li>
+<li>猫抓</li>
+</ul>
+<blockquote>
+<ul>
+<li>不多介绍，阿虚只提一下</li>
+<li>如果你准备使用浏览器扩展 / 插件，推荐使用「谷歌Chrome浏览器」</li>
+<li>Chrome浏览器的扩展 / 插件应该是最多最全的</li>
+<li>当然QQ，360这种Chrome内核的浏览器也是能用Chrome插件的，不过其插件市场可没Chrome全</li>
+<li>各浏览怎么安装扩展/插件，可以见我之前写过的教程：<a href="https://mp.weixin.qq.com/s/sA8HWVNj3HDoXc9pPztqyQ" target="_blank" rel="external">一个浏览器插件，和百度广告说再见</a></li>
+</ul>
+</blockquote>
+<h2 id="微信小程序"><a href="#微信小程序" class="headerlink" title="微信小程序"></a>微信小程序</h2><h3 id="易破解"><a href="#易破解" class="headerlink" title="易破解"></a>易破解</h3><p>一款名为易破解的微信小程序</p>
+<ul>
+<li><p>支持：<strong>微博、微视、抖音、快手、火山、秒拍、美拍、今日头条、全民K歌</strong>、西瓜视频、小咖秀、晃咖、网易云音乐、皮皮虾、陌陌、映客、小影、阳光宽频等等。</p>
+</li>
+<li><p>支持小红书app图片和短视频下载，部分支持去水印</p>
+</li>
+<li><p>该小程序每天提供免费3次下载，如果需要更多就需要付费了！</p>
+</li>
+</ul>
+<p><img src="https://ws1.sinaimg.cn/large/6f936308gy1fzj7d00wcnj20bw0cdn0n.jpg" alt="扫描上方二维码即可使用"></p>
+<p> <img src="https://ws1.sinaimg.cn/large/6f936308gy1fxbffj56jcg20h800l0eu.gif" alt=""></p>
+<p>IOS软件请自行到appstore中搜索进行下载。</p>
+<p>Windows、Android软件，阿虚已经给大家打包好了。</p>
+<p><strong>公众号上回复：视频下载</strong>，即可获取下载地址。</p>
+<p>本文提到的所有网站、软件，均会在之后更新到储物间</p>
+<p><img src="https://ws1.sinaimg.cn/large/6f936308gy1fze32znjv9g20430430w7.gif" alt="长按扫描二维码即可进入储物间"></p>
+<p><img src="https://ws4.sinaimg.cn/large/6f936308gy1fxrbfi9onpg207402iglf.gif" alt=""></p>
+<p><img src="http://bbs1.people.com.cn/postImages/Y0/45/B5/00/35/1543062749237.gif" alt=""></p>
+
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+      <div>
+        <div style="padding: 10px 0; margin: 20px auto; width: 90%; text-align: center;">
+  <div></div>
+  <button id="rewardButton" disable="enable" onclick="var qr = document.getElementById('QR'); if (qr.style.display === 'none') {qr.style.display='block';} else {qr.style.display='none'}">
+    <span>打赏</span>
+  </button>
+  <div id="QR" style="display: none;">
+
+    
+      <div id="wechat" style="display: inline-block">
+        <img id="wechat_qr" src="/images/赞赏二维码.jpeg" alt="砺心 微信支付"/>
+        <p>微信支付</p>
+      </div>
+    
+
+    
+
+    
+
+  </div>
+</div>
+
+      </div>
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/视频下载/" rel="tag"># 视频下载</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2018/10/28/两个软件，解决你所有的PDF转换问题/" rel="prev" title="两个软件，解决你所有的PDF转换问题">
+                两个软件，解决你所有的PDF转换问题 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+
+  
+    <div class="comments" id="comments">
+    </div>
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview-wrap sidebar-panel">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <img class="site-author-image" itemprop="image"
+                src="/images/阿虚头像.jpg"
+                alt="砺心" />
+            
+              <p class="site-author-name" itemprop="name">砺心</p>
+              <p class="site-description motion-element" itemprop="description">微信公众号：阿虚同学</p>
+          </div>
+
+          <nav class="site-state motion-element">
+
+            
+              <div class="site-state-item site-state-posts">
+              
+                <a href="/archives">
+              
+                  <span class="site-state-item-count">28</span>
+                  <span class="site-state-item-name">日志</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-categories">
+                <a href="/categories/index.html">
+                  <span class="site-state-item-count">2</span>
+                  <span class="site-state-item-name">分类</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-tags">
+                <a href="/tags/index.html">
+                  <span class="site-state-item-count">35</span>
+                  <span class="site-state-item-name">标签</span>
+                </a>
+              </div>
+            
+
+          </nav>
+
+          
+
+          
+            <div class="links-of-author motion-element">
+                
+                  <span class="links-of-author-item">
+                    <a href="mailto:axutongxue@qq.com" target="_blank" title="E-mail">
+                      
+                        <i class="fa fa-fw fa-envelope"></i>E-mail</a>
+                  </span>
+                
+            </div>
+          
+
+          
+          
+
+          
+          
+            <div class="links-of-blogroll motion-element links-of-blogroll-inline">
+              <div class="links-of-blogroll-title">
+                <i class="fa  fa-fw fa-globe"></i>
+                阿虚的其他小站
+              </div>
+              <ul class="links-of-blogroll-list">
+                
+                  <li class="links-of-blogroll-item">
+                    <a href="http://kyon945.ys168.com/" title="阿虚同学的储物间" target="_blank">阿虚同学的储物间</a>
+                  </li>
+                
+              </ul>
+            </div>
+          
+
+          
+
+        </div>
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#目录"><span class="nav-number">1.</span> <span class="nav-text">目录</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#一、前言"><span class="nav-number"></span> <span class="nav-text">一、前言</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#1"><span class="nav-number"></span> <span class="nav-text">1.</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2"><span class="nav-number"></span> <span class="nav-text">2.</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3"><span class="nav-number"></span> <span class="nav-text">3.</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#二、网页"><span class="nav-number"></span> <span class="nav-text">二、网页</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#多平台"><span class="nav-number"></span> <span class="nav-text">多平台</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#硕鼠"><span class="nav-number">1.</span> <span class="nav-text">硕鼠</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#V视频下载"><span class="nav-number">2.</span> <span class="nav-text">V视频下载</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#parsevideo"><span class="nav-number">3.</span> <span class="nav-text">parsevideo</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#视频鱼"><span class="nav-number">4.</span> <span class="nav-text">视频鱼</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#微博党"><span class="nav-number">5.</span> <span class="nav-text">微博党</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#videograbber"><span class="nav-number">6.</span> <span class="nav-text">videograbber</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#PickFrom"><span class="nav-number">7.</span> <span class="nav-text">PickFrom</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#单平台"><span class="nav-number"></span> <span class="nav-text">单平台</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#哔哩哔哩（B站）"><span class="nav-number">1.</span> <span class="nav-text">哔哩哔哩（B站）</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#音悦台"><span class="nav-number">2.</span> <span class="nav-text">音悦台</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#微博"><span class="nav-number">3.</span> <span class="nav-text">微博</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#抖音-快手-等"><span class="nav-number">4.</span> <span class="nav-text">抖音 / 快手 等</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#国外视频网站"><span class="nav-number">5.</span> <span class="nav-text">国外视频网站</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#三、Windows"><span class="nav-number"></span> <span class="nav-text">三、Windows</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#IDM"><span class="nav-number"></span> <span class="nav-text">IDM</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#维棠"><span class="nav-number"></span> <span class="nav-text">维棠</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#乐影下载器"><span class="nav-number"></span> <span class="nav-text">乐影下载器</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#免费版支持解析："><span class="nav-number">1.</span> <span class="nav-text">免费版支持解析：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#付费版比免费版增加了："><span class="nav-number">2.</span> <span class="nav-text">付费版比免费版增加了：</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#硕鼠-1"><span class="nav-number"></span> <span class="nav-text">硕鼠</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Apowersoft视频下载王"><span class="nav-number"></span> <span class="nav-text">Apowersoft视频下载王</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#四、IOS"><span class="nav-number"></span> <span class="nav-text">四、IOS</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#指尖浏览器"><span class="nav-number"></span> <span class="nav-text">指尖浏览器</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Video-Saver-Pro"><span class="nav-number"></span> <span class="nav-text">Video Saver Pro+</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Documents"><span class="nav-number"></span> <span class="nav-text">Documents</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#备注"><span class="nav-number"></span> <span class="nav-text">备注</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#五、Android"><span class="nav-number"></span> <span class="nav-text">五、Android</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#指尖浏览器-1"><span class="nav-number"></span> <span class="nav-text">指尖浏览器</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#X浏览器"><span class="nav-number"></span> <span class="nav-text">X浏览器</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Via浏览器"><span class="nav-number"></span> <span class="nav-text">Via浏览器</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#小乖鱼"><span class="nav-number"></span> <span class="nav-text">小乖鱼</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Mac"><span class="nav-number"></span> <span class="nav-text">Mac</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#六、其他"><span class="nav-number"></span> <span class="nav-text">六、其他</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#浏览器扩展-插件"><span class="nav-number"></span> <span class="nav-text">浏览器扩展 / 插件</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#微信小程序"><span class="nav-number"></span> <span class="nav-text">微信小程序</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#易破解"><span class="nav-number">1.</span> <span class="nav-text">易破解</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2019</span>
+  <span class="with-love">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">砺心</span>
+
+  
+</div>
+
+
+  <div class="powered-by">由 <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a> 强力驱动</div>
+
+
+
+  <span class="post-meta-divider">|</span>
+
+
+
+  <div class="theme-info">主题 &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Pisces</a> v5.1.4</div>
+
+
+
+
+        
+<div class="busuanzi-count">
+  <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+  
+    <span class="site-uv">
+      <i class="fa fa-user"></i> 访问人数
+      <span class="busuanzi-value" id="busuanzi_value_site_uv"></span>
+      人
+    </span>
+  
+
+  
+    <span class="site-pv">
+      <i class="fa fa-eye"></i> 总访问量
+      <span class="busuanzi-value" id="busuanzi_value_site_pv"></span>
+      次
+    </span>
+  
+</div>
+
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/canvas-nest/canvas-nest.min.js"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.4"></script>
+
+
+
+  
+  
+
+
+  <script type="text/javascript" src="/js/src/affix.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.1.4"></script>
+
+
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+  <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+  <script src="//unpkg.com/valine/dist/Valine.min.js"></script>
+  
+  <script type="text/javascript">
+    var GUEST = ['nick','mail','link'];
+    var guest = 'nick,mail,link';
+    guest = guest.split(',').filter(item=>{
+      return GUEST.indexOf(item)>-1;
+    });
+    new Valine({
+        el: '#comments' ,
+        verify: false,
+        notify: false,
+        appId: 'YfVCcHfTVwE8JTm2MqmxsFu8-gzGzoHsz',
+        appKey: 'qWc4PDM2ULFFTS3K1099QuWs',
+        placeholder: '记得填写邮箱哦，回复你时才会有提醒~',
+        avatar:'mm',
+        guest_info:guest,
+        pageSize:'10' || 10,
+    });
+  </script>
+
+
+
+  
+
+  <script type="text/javascript">
+    // Popup Window;
+    var isfetched = false;
+    var isXml = true;
+    // Search DB path;
+    var search_path = "search.xml";
+    if (search_path.length === 0) {
+      search_path = "search.xml";
+    } else if (/json$/i.test(search_path)) {
+      isXml = false;
+    }
+    var path = "/" + search_path;
+    // monitor main search box;
+
+    var onPopupClose = function (e) {
+      $('.popup').hide();
+      $('#local-search-input').val('');
+      $('.search-result-list').remove();
+      $('#no-result').remove();
+      $(".local-search-pop-overlay").remove();
+      $('body').css('overflow', '');
+    }
+
+    function proceedsearch() {
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay"></div>')
+        .css('overflow', 'hidden');
+      $('.search-popup-overlay').click(onPopupClose);
+      $('.popup').toggle();
+      var $localSearchInput = $('#local-search-input');
+      $localSearchInput.attr("autocapitalize", "none");
+      $localSearchInput.attr("autocorrect", "off");
+      $localSearchInput.focus();
+    }
+
+    // search function;
+    var searchFunc = function(path, search_id, content_id) {
+      'use strict';
+
+      // start loading animation
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay">' +
+          '<div id="search-loading-icon">' +
+          '<i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>' +
+          '</div>' +
+          '</div>')
+        .css('overflow', 'hidden');
+      $("#search-loading-icon").css('margin', '20% auto 0 auto').css('text-align', 'center');
+
+      $.ajax({
+        url: path,
+        dataType: isXml ? "xml" : "json",
+        async: true,
+        success: function(res) {
+          // get the contents from search data
+          isfetched = true;
+          $('.popup').detach().appendTo('.header-inner');
+          var datas = isXml ? $("entry", res).map(function() {
+            return {
+              title: $("title", this).text(),
+              content: $("content",this).text(),
+              url: $("url" , this).text()
+            };
+          }).get() : res;
+          var input = document.getElementById(search_id);
+          var resultContent = document.getElementById(content_id);
+          var inputEventFunction = function() {
+            var searchText = input.value.trim().toLowerCase();
+            var keywords = searchText.split(/[\s\-]+/);
+            if (keywords.length > 1) {
+              keywords.push(searchText);
+            }
+            var resultItems = [];
+            if (searchText.length > 0) {
+              // perform local searching
+              datas.forEach(function(data) {
+                var isMatch = false;
+                var hitCount = 0;
+                var searchTextCount = 0;
+                var title = data.title.trim();
+                var titleInLowerCase = title.toLowerCase();
+                var content = data.content.trim().replace(/<[^>]+>/g,"");
+                var contentInLowerCase = content.toLowerCase();
+                var articleUrl = decodeURIComponent(data.url);
+                var indexOfTitle = [];
+                var indexOfContent = [];
+                // only match articles with not empty titles
+                if(title != '') {
+                  keywords.forEach(function(keyword) {
+                    function getIndexByWord(word, text, caseSensitive) {
+                      var wordLen = word.length;
+                      if (wordLen === 0) {
+                        return [];
+                      }
+                      var startPosition = 0, position = [], index = [];
+                      if (!caseSensitive) {
+                        text = text.toLowerCase();
+                        word = word.toLowerCase();
+                      }
+                      while ((position = text.indexOf(word, startPosition)) > -1) {
+                        index.push({position: position, word: word});
+                        startPosition = position + wordLen;
+                      }
+                      return index;
+                    }
+
+                    indexOfTitle = indexOfTitle.concat(getIndexByWord(keyword, titleInLowerCase, false));
+                    indexOfContent = indexOfContent.concat(getIndexByWord(keyword, contentInLowerCase, false));
+                  });
+                  if (indexOfTitle.length > 0 || indexOfContent.length > 0) {
+                    isMatch = true;
+                    hitCount = indexOfTitle.length + indexOfContent.length;
+                  }
+                }
+
+                // show search results
+
+                if (isMatch) {
+                  // sort index by position of keyword
+
+                  [indexOfTitle, indexOfContent].forEach(function (index) {
+                    index.sort(function (itemLeft, itemRight) {
+                      if (itemRight.position !== itemLeft.position) {
+                        return itemRight.position - itemLeft.position;
+                      } else {
+                        return itemLeft.word.length - itemRight.word.length;
+                      }
+                    });
+                  });
+
+                  // merge hits into slices
+
+                  function mergeIntoSlice(text, start, end, index) {
+                    var item = index[index.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    var hits = [];
+                    var searchTextCountInSlice = 0;
+                    while (position + word.length <= end && index.length != 0) {
+                      if (word === searchText) {
+                        searchTextCountInSlice++;
+                      }
+                      hits.push({position: position, length: word.length});
+                      var wordEnd = position + word.length;
+
+                      // move to next position of hit
+
+                      index.pop();
+                      while (index.length != 0) {
+                        item = index[index.length - 1];
+                        position = item.position;
+                        word = item.word;
+                        if (wordEnd > position) {
+                          index.pop();
+                        } else {
+                          break;
+                        }
+                      }
+                    }
+                    searchTextCount += searchTextCountInSlice;
+                    return {
+                      hits: hits,
+                      start: start,
+                      end: end,
+                      searchTextCount: searchTextCountInSlice
+                    };
+                  }
+
+                  var slicesOfTitle = [];
+                  if (indexOfTitle.length != 0) {
+                    slicesOfTitle.push(mergeIntoSlice(title, 0, title.length, indexOfTitle));
+                  }
+
+                  var slicesOfContent = [];
+                  while (indexOfContent.length != 0) {
+                    var item = indexOfContent[indexOfContent.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    // cut out 100 characters
+                    var start = position - 20;
+                    var end = position + 80;
+                    if(start < 0){
+                      start = 0;
+                    }
+                    if (end < position + word.length) {
+                      end = position + word.length;
+                    }
+                    if(end > content.length){
+                      end = content.length;
+                    }
+                    slicesOfContent.push(mergeIntoSlice(content, start, end, indexOfContent));
+                  }
+
+                  // sort slices in content by search text's count and hits' count
+
+                  slicesOfContent.sort(function (sliceLeft, sliceRight) {
+                    if (sliceLeft.searchTextCount !== sliceRight.searchTextCount) {
+                      return sliceRight.searchTextCount - sliceLeft.searchTextCount;
+                    } else if (sliceLeft.hits.length !== sliceRight.hits.length) {
+                      return sliceRight.hits.length - sliceLeft.hits.length;
+                    } else {
+                      return sliceLeft.start - sliceRight.start;
+                    }
+                  });
+
+                  // select top N slices in content
+
+                  var upperBound = parseInt('1');
+                  if (upperBound >= 0) {
+                    slicesOfContent = slicesOfContent.slice(0, upperBound);
+                  }
+
+                  // highlight title and content
+
+                  function highlightKeyword(text, slice) {
+                    var result = '';
+                    var prevEnd = slice.start;
+                    slice.hits.forEach(function (hit) {
+                      result += text.substring(prevEnd, hit.position);
+                      var end = hit.position + hit.length;
+                      result += '<b class="search-keyword">' + text.substring(hit.position, end) + '</b>';
+                      prevEnd = end;
+                    });
+                    result += text.substring(prevEnd, slice.end);
+                    return result;
+                  }
+
+                  var resultItem = '';
+
+                  if (slicesOfTitle.length != 0) {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + highlightKeyword(title, slicesOfTitle[0]) + "</a>";
+                  } else {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + title + "</a>";
+                  }
+
+                  slicesOfContent.forEach(function (slice) {
+                    resultItem += "<a href='" + articleUrl + "'>" +
+                      "<p class=\"search-result\">" + highlightKeyword(content, slice) +
+                      "...</p>" + "</a>";
+                  });
+
+                  resultItem += "</li>";
+                  resultItems.push({
+                    item: resultItem,
+                    searchTextCount: searchTextCount,
+                    hitCount: hitCount,
+                    id: resultItems.length
+                  });
+                }
+              })
+            };
+            if (keywords.length === 1 && keywords[0] === "") {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-search fa-5x" /></div>'
+            } else if (resultItems.length === 0) {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-frown-o fa-5x" /></div>'
+            } else {
+              resultItems.sort(function (resultLeft, resultRight) {
+                if (resultLeft.searchTextCount !== resultRight.searchTextCount) {
+                  return resultRight.searchTextCount - resultLeft.searchTextCount;
+                } else if (resultLeft.hitCount !== resultRight.hitCount) {
+                  return resultRight.hitCount - resultLeft.hitCount;
+                } else {
+                  return resultRight.id - resultLeft.id;
+                }
+              });
+              var searchResultList = '<ul class=\"search-result-list\">';
+              resultItems.forEach(function (result) {
+                searchResultList += result.item;
+              })
+              searchResultList += "</ul>";
+              resultContent.innerHTML = searchResultList;
+            }
+          }
+
+          if ('auto' === 'auto') {
+            input.addEventListener('input', inputEventFunction);
+          } else {
+            $('.search-icon').click(inputEventFunction);
+            input.addEventListener('keypress', function (event) {
+              if (event.keyCode === 13) {
+                inputEventFunction();
+              }
+            });
+          }
+
+          // remove loading animation
+          $(".local-search-pop-overlay").remove();
+          $('body').css('overflow', '');
+
+          proceedsearch();
+        }
+      });
+    }
+
+    // handle and trigger popup window;
+    $('.popup-trigger').click(function(e) {
+      e.stopPropagation();
+      if (isfetched === false) {
+        searchFunc(path, 'local-search-input', 'local-search-result');
+      } else {
+        proceedsearch();
+      };
+    });
+
+    $('.popup-btn-close').click(onPopupClose);
+    $('.popup').click(function(e){
+      e.stopPropagation();
+    });
+    $(document).on('keyup', function (event) {
+      var shouldDismissSearchPopup = event.which === 27 &&
+        $('.search-popup').is(':visible');
+      if (shouldDismissSearchPopup) {
+        onPopupClose();
+      }
+    });
+  </script>
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>
