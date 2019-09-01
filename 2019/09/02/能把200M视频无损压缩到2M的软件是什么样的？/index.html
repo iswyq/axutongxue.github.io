@@ -1,0 +1,1377 @@
+<!DOCTYPE html>
+
+
+
+  
+
+
+<html class="theme-next pisces use-motion" lang="zh-Hans">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.1.4" rel="stylesheet" type="text/css" />
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=5.1.4">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=5.1.4" color="#222">
+
+
+
+
+
+  <meta name="keywords" content="视频压缩," />
+
+
+
+
+
+
+
+
+
+
+<meta name="description" content="写这篇的原因是因为阿虚偶然在知乎上看到一篇26K赞的高赞回答：
+
+
+
+然后阿虚定睛一看，这软件我也用过啊，但没感觉效果这么好啊？
+难道是阿虚之前的用法有问题？？
+
+于是阿虚马上拿出来好好研究了一番">
+<meta property="og:type" content="article">
+<meta property="og:title" content="能把200M视频无损压缩到2M的软件是什么样的？">
+<meta property="og:url" content="http://axutongxue.github.io/2019/09/02/能把200M视频无损压缩到2M的软件是什么样的？/index.html">
+<meta property="og:site_name" content="阿虚同学的博客">
+<meta property="og:description" content="写这篇的原因是因为阿虚偶然在知乎上看到一篇26K赞的高赞回答：
+
+
+
+然后阿虚定睛一看，这软件我也用过啊，但没感觉效果这么好啊？
+难道是阿虚之前的用法有问题？？
+
+于是阿虚马上拿出来好好研究了一番">
+<meta property="og:image" content="https://i.loli.net/2019/08/31/Aq7acrL1TZBgXyE.png">
+<meta property="og:image" content="https://i.loli.net/2019/08/31/CMKPXc6VGzJZepf.gif">
+<meta property="og:image" content="https://i.loli.net/2019/08/31/Jmyao1D42e3IBGV.png">
+<meta property="og:image" content="https://i.loli.net/2019/08/31/d6jm5iGKnXSe1Ip.gif">
+<meta property="og:image" content="https://i.loli.net/2019/08/31/r1fRVsvxbl7NATU.png">
+<meta property="og:image" content="https://i.loli.net/2019/08/31/nGVAcyKYWudDJw5.png">
+<meta property="og:image" content="https://i.loli.net/2019/08/31/FHhmzfV93C5wtdL.png">
+<meta property="og:image" content="https://i.loli.net/2019/08/31/5kS9gMs6nKzfqDm.png">
+<meta property="og:image" content="https://i.loli.net/2019/08/31/9GIxZkTYlKoAf5i.png">
+<meta property="og:image" content="https://i.loli.net/2019/08/31/tyNBXKeIQMn7gCO.gif">
+<meta property="og:image" content="https://i.loli.net/2019/08/31/K2y4Uzx7mlnVOTZ.png">
+<meta property="og:image" content="https://i.loli.net/2019/08/31/igkEAb6lpOVPsdv.png">
+<meta property="og:image" content="https://i.loli.net/2019/08/31/RmfjVdixbGTYrWP.gif">
+<meta property="og:image" content="https://i.loli.net/2019/08/31/3PRO8zwoQ5YvLbq.gif">
+<meta property="og:image" content="https://i.loli.net/2019/08/31/8Iyl4gfCqSvob2e.png">
+<meta property="og:image" content="https://i.loli.net/2019/08/31/kMSXKJ4mseVENg9.png">
+<meta property="og:image" content="https://i.loli.net/2019/09/01/BQvWgMdy68NVibH.png">
+<meta property="og:image" content="https://i.loli.net/2019/09/01/Xkhe5Bwna3tH9gF.png">
+<meta property="og:image" content="https://i.loli.net/2019/08/31/UaXjlNoyHACY1Mg.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/axutongxue/img/master/liliwanxin2.gif">
+<meta property="og:image" content="https://i.loli.net/2019/08/31/X9yHFSBKVUqM5P7.gif">
+<meta property="og:image" content="https://i.loli.net/2019/08/31/ckVMHhR2IWQFdOZ.png">
+<meta property="og:image" content="https://i.loli.net/2019/08/31/SaDjpOurebvU38z.png">
+<meta property="og:image" content="https://i.loli.net/2019/09/01/HRYVgT9jkvsiX7C.png">
+<meta property="og:image" content="https://i.loli.net/2019/09/01/syS9DXeJxWb5qAF.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/axutongxue/img/master/20190901203221.png">
+<meta property="og:image" content="https://i.loli.net/2019/09/01/V5j7PekvZUsWrJM.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/axutongxue/img/master/liliwanxin.gif">
+<meta property="og:image" content="https://raw.githubusercontent.com/axutongxue/img/master/end.gif">
+<meta property="og:updated_time" content="2019-09-01T15:04:41.575Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="能把200M视频无损压缩到2M的软件是什么样的？">
+<meta name="twitter:description" content="写这篇的原因是因为阿虚偶然在知乎上看到一篇26K赞的高赞回答：
+
+
+
+然后阿虚定睛一看，这软件我也用过啊，但没感觉效果这么好啊？
+难道是阿虚之前的用法有问题？？
+
+于是阿虚马上拿出来好好研究了一番">
+<meta name="twitter:image" content="https://i.loli.net/2019/08/31/Aq7acrL1TZBgXyE.png">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Pisces',
+    version: '5.1.4',
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: true,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    duoshuo: {
+      userId: '0',
+      author: '博主'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="http://axutongxue.github.io/2019/09/02/能把200M视频无损压缩到2M的软件是什么样的？/"/>
+
+
+
+
+
+  <title>能把200M视频无损压缩到2M的软件是什么样的？ | 阿虚同学的博客</title>
+  
+
+
+
+
+
+  <script type="text/javascript">
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "https://hm.baidu.com/hm.js?15f9d2a83bdb84460a5c1b931099b833";
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(hm, s);
+    })();
+  </script>
+
+
+
+
+  <!-- 页面点击小红心 -->
+<script type="text/javascript" src="/js/src/love.js"></script>
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/"  class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">阿虚同学的博客</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle"></p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-about">
+          <a href="/about/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-user"></i> <br />
+            
+            关于
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+            
+            标签
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
+            
+            分类
+          </a>
+        </li>
+      
+
+      
+        <li class="menu-item menu-item-search">
+          
+            <a href="javascript:;" class="popup-trigger">
+          
+            
+              <i class="menu-item-icon fa fa-search fa-fw"></i> <br />
+            
+            搜索
+          </a>
+        </li>
+      
+    </ul>
+  
+
+  
+    <div class="site-search">
+      
+  <div class="popup search-popup local-search-popup">
+  <div class="local-search-header clearfix">
+    <span class="search-icon">
+      <i class="fa fa-search"></i>
+    </span>
+    <span class="popup-btn-close">
+      <i class="fa fa-times-circle"></i>
+    </span>
+    <div class="local-search-input-wrapper">
+      <input autocomplete="off"
+             placeholder="搜索..." spellcheck="false"
+             type="text" id="local-search-input">
+    </div>
+  </div>
+  <div id="local-search-result"></div>
+</div>
+
+
+
+    </div>
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://axutongxue.github.io/2019/09/02/能把200M视频无损压缩到2M的软件是什么样的？/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="砺心">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/阿虚头像.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="阿虚同学的博客">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">能把200M视频无损压缩到2M的软件是什么样的？</h1>
+        
+
+        <div class="post-meta">
+        
+                    
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-09-02T00:00:00+08:00">
+                2019-09-02
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/公众号/" itemprop="url" rel="index">
+                    <span itemprop="name">公众号</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2019/09/02/能把200M视频无损压缩到2M的软件是什么样的？/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count valine-comment-count" data-xid="/2019/09/02/能把200M视频无损压缩到2M的软件是什么样的？/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+
+          
+            <span class="post-meta-divider">|</span>
+            <span class="page-pv"><i class="fa fa-file-o"></i> 阅读数
+            <span class="busuanzi-value" id="busuanzi_value_page_pv" ></span>
+            </span>
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <p>写这篇的原因是因为阿虚偶然在知乎上看到<em>一篇26K赞的高赞回答：</em></p>
+<p><img src="https://i.loli.net/2019/08/31/Aq7acrL1TZBgXyE.png" alt=""></p>
+<p><img src="https://i.loli.net/2019/08/31/CMKPXc6VGzJZepf.gif" alt=""></p>
+<p><img src="https://i.loli.net/2019/08/31/Jmyao1D42e3IBGV.png" alt=""></p>
+<p>然后阿虚定睛一看，<strong>这软件我也用过啊，但没感觉效果这么好啊？</strong></p>
+<p>难道是阿虚之前的用法有问题？？</p>
+<p><img src="https://i.loli.net/2019/08/31/d6jm5iGKnXSe1Ip.gif" alt=""></p>
+<p>于是阿虚马上拿出来好好研究了一番</p>
+<a id="more"></a>
+<h1 id="一、Moo0-VideoResize"><a href="#一、Moo0-VideoResize" class="headerlink" title="一、Moo0 VideoResize"></a>一、Moo0 VideoResize</h1><p>官网：<a href="https://zhs.moo0.com/" target="_blank" rel="external">https://zhs.moo0.com/</a></p>
+<p>这款软件是国外的一款良心压缩软件`<del>（Moo0很有趣的品牌名）</del></p>
+<p>软件自带中文，对国人使用来说也是非常的友好</p>
+<p>界面简单，右边设置好，再把视频拖到左边一栏就可以开始压缩了</p>
+<p><img src="https://i.loli.net/2019/08/31/r1fRVsvxbl7NATU.png" alt=""></p>
+<h2 id="（一）就知乎某高赞回答的测试"><a href="#（一）就知乎某高赞回答的测试" class="headerlink" title="（一）就知乎某高赞回答的测试"></a>（一）就知乎某高赞回答的测试</h2><p>然后阿虚马上就来测试一下是不是真的能把200M的视频无损压缩到2M</p>
+<p>先找来一个200M样子的视频<img src="https://i.loli.net/2019/08/31/nGVAcyKYWudDJw5.png" alt=""></p>
+<p>软件设置导出2M，分辨率设为自动调整，画质调为最好</p>
+<p><img src="https://i.loli.net/2019/08/31/FHhmzfV93C5wtdL.png" alt=""></p>
+<p>花了2分半就压制好了，比我想象中的快不少</p>
+<p><img src="https://i.loli.net/2019/08/31/5kS9gMs6nKzfqDm.png" alt=""></p>
+<p>然后这就是得到的文件<code>（嗯，是的，虽然设置的是2M，但导出来还是有3.7M）</code></p>
+<p><img src="https://i.loli.net/2019/08/31/9GIxZkTYlKoAf5i.png" alt=""></p>
+<p>然后…播放一下…试试</p>
+<p><img src="https://i.loli.net/2019/08/31/tyNBXKeIQMn7gCO.gif" alt=""></p>
+<p>画面小到不能再小，当然放大后也是糊到不能再糊</p>
+<p>如果原1080P和压缩后的…<em>100P</em>视频做对比，就是下图这个样子</p>
+<p><img src="https://i.loli.net/2019/08/31/K2y4Uzx7mlnVOTZ.png" alt=""></p>
+<p>回头再看看原答主的回答</p>
+<p><img src="https://i.loli.net/2019/08/31/igkEAb6lpOVPsdv.png" alt=""></p>
+<p>猜测原答主</p>
+<ol>
+<li><p>可能是对200M的视频是多大有什么误解</p>
+</li>
+<li><p>可能是眼神不太好，对清晰度没啥判断</p>
+</li>
+<li>可能是语文老师教的“无损”一词的意思和我知道的不一样</li>
+</ol>
+<p><img src="https://i.loli.net/2019/08/31/RmfjVdixbGTYrWP.gif" alt=""></p>
+<p>总之Moo0 VideoResize，并没有那个知乎高赞答主说的那么神</p>
+<p><strong>但！Moo0 VideoResize却也是真的很好用！</strong></p>
+<p><img src="https://i.loli.net/2019/08/31/3PRO8zwoQ5YvLbq.gif" alt=""></p>
+<h2 id="（二）视频压制参数"><a href="#（二）视频压制参数" class="headerlink" title="（二）视频压制参数"></a>（二）视频压制参数</h2><p>其实稍微有了解就知道想把200M的视频<strong>无损压缩</strong>到2M是不可能的</p>
+<p>视频在电脑上无非也是一堆的数据组成，数据量越大，呈现出来的画面质量自然越好。简单来理解就是：数据量决定品质<code>（这就大概和价格决定品质一个道理...）</code></p>
+<p>但通过你正确的设置，也是可以在<em>肉眼感受不到的画质差距下</em>，压制出不错大小的视频的</p>
+<p><img src="https://i.loli.net/2019/08/31/8Iyl4gfCqSvob2e.png" alt=""></p>
+<p>从原来的差不多200M，压缩到了80M</p>
+<p><img src="https://i.loli.net/2019/08/31/kMSXKJ4mseVENg9.png" alt=""></p>
+<h3 id="画质级别"><a href="#画质级别" class="headerlink" title="画质级别"></a>画质级别</h3><p>这个参数这个主要看你个人对画质的要求</p>
+<p><code>实际上，这里选最小，后面画质选最好，依然是能压出能接受的画质的</code></p>
+<p><img src="https://i.loli.net/2019/09/01/BQvWgMdy68NVibH.png" alt=""></p>
+<h3 id="画质"><a href="#画质" class="headerlink" title="画质"></a>画质</h3><p>基本上是选择「最好」，或者「更高」</p>
+<p><img src="https://i.loli.net/2019/09/01/Xkhe5Bwna3tH9gF.png" alt=""></p>
+<h3 id="备注"><a href="#备注" class="headerlink" title="备注"></a>备注</h3><p>但阿虚一定得说，没有最优的设置，压缩视频这种事，始终是需要根据原视频情况来定的（原视频是否已经压制过，是否高帧，编码器是什么，格式是什么等等…）</p>
+<p>这里简单给一下阿虚压缩时采用的设置</p>
+<p><img src="https://i.loli.net/2019/08/31/UaXjlNoyHACY1Mg.png" alt=""></p>
+<p><img src="https://raw.githubusercontent.com/axutongxue/img/master/liliwanxin2.gif" alt=""></p>
+<p>言归正传，应该看得出来吧，今天阿虚其实是推荐来推荐视频压缩软件的</p>
+<p><img src="https://i.loli.net/2019/08/31/X9yHFSBKVUqM5P7.gif" alt=""></p>
+<p>除了Moo0 VideoResize，还有一款届内比较知名的软件：小丸工具箱</p>
+<p><code>软件下载方式请看文末</code></p>
+<p><code>软件下载方式请看文末</code></p>
+<h1 id="二、小丸工具箱"><a href="#二、小丸工具箱" class="headerlink" title="二、小丸工具箱"></a>二、小丸工具箱</h1><p>官网：<a href="https://maruko.appinn.me/" target="_blank" rel="external">https://maruko.appinn.me/</a></p>
+<p>如果<em>你比较在意压缩后的画质，或者说你需要批量压缩</em>，建议你使用小丸工具箱</p>
+<p>小丸工具的功能挺多，但阿虚只介绍一下视频压缩功能：</p>
+<ul>
+<li>高质量的H264+AAC<em>视频压制</em></li>
+<li>ASS/SRT<em>字幕内嵌到视频</em></li>
+<li>AAC/WAV/FLAC/ALAC<em>音频转换</em></li>
+<li>MP4/MKV/FLV的无损抽取和封装</li>
+</ul>
+<p><img src="https://i.loli.net/2019/08/31/ckVMHhR2IWQFdOZ.png" alt=""></p>
+<p>采用小丸工具箱的默认设置，可以在保存<strong>画质几乎不变</strong>的情况下，压制出文件大小更小的视频</p>
+<p><img src="https://i.loli.net/2019/08/31/SaDjpOurebvU38z.png" alt=""></p>
+<h2 id="（一）视频压制参数"><a href="#（一）视频压制参数" class="headerlink" title="（一）视频压制参数"></a>（一）视频压制参数</h2><p>小丸工具箱的压缩参数基本上取决于两个设置</p>
+<p><img src="https://i.loli.net/2019/09/01/HRYVgT9jkvsiX7C.png" alt=""></p>
+<h3 id="CRF"><a href="#CRF" class="headerlink" title="CRF"></a>CRF</h3><p>CRF中的质量的范围可以是1.0 - 51.0，一般设置21-25之间就可以，<em>CRF越大，文件大小越小，画质越差</em></p>
+<p> 21可以压制出高码率（高画质），网络播放则设为24即可</p>
+<p><img src="https://i.loli.net/2019/09/01/syS9DXeJxWb5qAF.png" alt=""></p>
+<p>阿虚实测，CRF40左右压缩出来的画质还能接受</p>
+<p>再往上，接近CRF50时（最大值51），压缩出来的画质就基本上无法看了</p>
+<blockquote>
+<ul>
+<li>CRF（Constant Rate Factor），这种码率控制方式是非常优秀的，以至于可以无需2pass压制，即使1pass也能实现非常好的码率分配利用</li>
+<li>很多人在压片的时候不清楚应该给视频压到多少码率才比较好</li>
+<li>那你用CRF就没错了，CRF就是按需要来分配码率的</li>
+</ul>
+</blockquote>
+<h3 id="分辨率"><a href="#分辨率" class="headerlink" title="分辨率"></a>分辨率</h3><p>宽和高就是视频分辨率。很显然宽X高越大，则输出的视频越大</p>
+<p><img src="https://raw.githubusercontent.com/axutongxue/img/master/20190901203221.png" alt=""></p>
+<h3 id="更多参数"><a href="#更多参数" class="headerlink" title="更多参数"></a>更多参数</h3><p>软件的常见问题和压缩设置，在小丸工具箱的帮助页都有详细说明</p>
+<p><img src="https://i.loli.net/2019/09/01/V5j7PekvZUsWrJM.png" alt=""></p>
+<h1 id="三、什么是码率？"><a href="#三、什么是码率？" class="headerlink" title="三、什么是码率？"></a>三、什么是码率？</h1><p>上面提到了很多次视频码率，码率会影响文件尺寸与图像质量，所以这个概念对于视频压缩来说还是很有必要了解的：</p>
+<ul>
+<li>视频码率是指<strong>每秒钟视频的数据量</strong>，码率越高视频质量好</li>
+<li>视频文件大小=视频码率X时长</li>
+<li>如果你上传视频到网上，你也可以这样理解，码率越大，你想要流畅观看时所需要的网速越大</li>
+</ul>
+<p>如果你还想了解更多，你可以看看下面这个视频</p>
+<p><a href="https://v.qq.com/x/page/z0127j6hwsw.html" target="_blank" rel="external">https://v.qq.com/x/page/z0127j6hwsw.html</a></p>
+<h1 id="四、软件下载"><a href="#四、软件下载" class="headerlink" title="四、软件下载"></a>四、软件下载</h1><p>需要今天提到的文件的话，你可以去官网直接下载</p>
+<ul>
+<li><p>小丸工具箱官网：<a href="https://maruko.appinn.me/" target="_blank" rel="external">https://maruko.appinn.me/</a></p>
+</li>
+<li><p>Moo0 VideoResize官网：<a href="https://zhs.moo0.com/" target="_blank" rel="external">https://zhs.moo0.com/</a></p>
+</li>
+</ul>
+<p><strong>也可以关注微信公众号：阿虚同学</strong></p>
+<p><strong>回复：视频压缩</strong></p>
+<p>后台即会自动回复资源下载地址</p>
+<p><code>Moo0 VideoResize阿虚提供单文件版哦</code></p>
+<p><img src="https://raw.githubusercontent.com/axutongxue/img/master/liliwanxin.gif" alt=""></p>
+<p>回头想想为什么别人知乎的回答能有 <em>26K</em> 赞呢？</p>
+<p>虽然分享的视频压缩软件只是他回答中的一部分</p>
+<p>但这么高赞可能也是和「他会吹牛逼」少不了一定关系吧</p>
+<p>阿虚也只能说：受教了！</p>
+<p><img src="https://raw.githubusercontent.com/axutongxue/img/master/end.gif" alt=""></p>
+
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+      <div>
+        <div style="padding: 10px 0; margin: 20px auto; width: 90%; text-align: center;">
+  <div></div>
+  <button id="rewardButton" disable="enable" onclick="var qr = document.getElementById('QR'); if (qr.style.display === 'none') {qr.style.display='block';} else {qr.style.display='none'}">
+    <span>打赏</span>
+  </button>
+  <div id="QR" style="display: none;">
+
+    
+      <div id="wechat" style="display: inline-block">
+        <img id="wechat_qr" src="/images/赞赏二维码.jpeg" alt="砺心 微信支付"/>
+        <p>微信支付</p>
+      </div>
+    
+
+    
+
+    
+
+  </div>
+</div>
+
+      </div>
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/视频压缩/" rel="tag"># 视频压缩</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2019/08/29/像浏览器一样打开你的文件夹，效率办公必备！/" rel="next" title="像浏览器一样打开你的文件夹，效率办公必备！">
+                <i class="fa fa-chevron-left"></i> 像浏览器一样打开你的文件夹，效率办公必备！
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+
+  
+    <div class="comments" id="comments">
+    </div>
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview-wrap sidebar-panel">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <img class="site-author-image" itemprop="image"
+                src="/images/阿虚头像.jpg"
+                alt="砺心" />
+            
+              <p class="site-author-name" itemprop="name">砺心</p>
+              <p class="site-description motion-element" itemprop="description">微信公众号：阿虚同学</p>
+          </div>
+
+          <nav class="site-state motion-element">
+
+            
+              <div class="site-state-item site-state-posts">
+              
+                <a href="/archives">
+              
+                  <span class="site-state-item-count">60</span>
+                  <span class="site-state-item-name">日志</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-categories">
+                <a href="/categories/index.html">
+                  <span class="site-state-item-count">2</span>
+                  <span class="site-state-item-name">分类</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-tags">
+                <a href="/tags/index.html">
+                  <span class="site-state-item-count">74</span>
+                  <span class="site-state-item-name">标签</span>
+                </a>
+              </div>
+            
+
+          </nav>
+
+          
+
+          
+            <div class="links-of-author motion-element">
+                
+                  <span class="links-of-author-item">
+                    <a href="mailto:axutongxue@qq.com" target="_blank" title="E-mail">
+                      
+                        <i class="fa fa-fw fa-envelope"></i>E-mail</a>
+                  </span>
+                
+            </div>
+          
+
+          
+          
+
+          
+          
+            <div class="links-of-blogroll motion-element links-of-blogroll-inline">
+              <div class="links-of-blogroll-title">
+                <i class="fa  fa-fw fa-globe"></i>
+                阿虚的其他小站
+              </div>
+              <ul class="links-of-blogroll-list">
+                
+                  <li class="links-of-blogroll-item">
+                    <a href="http://kyon945.ys168.com/" title="阿虚同学的储物间" target="_blank">阿虚同学的储物间</a>
+                  </li>
+                
+              </ul>
+            </div>
+          
+
+          
+
+        </div>
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#一、Moo0-VideoResize"><span class="nav-number">1.</span> <span class="nav-text">一、Moo0 VideoResize</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#（一）就知乎某高赞回答的测试"><span class="nav-number">1.1.</span> <span class="nav-text">（一）就知乎某高赞回答的测试</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#（二）视频压制参数"><span class="nav-number">1.2.</span> <span class="nav-text">（二）视频压制参数</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#画质级别"><span class="nav-number">1.2.1.</span> <span class="nav-text">画质级别</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#画质"><span class="nav-number">1.2.2.</span> <span class="nav-text">画质</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#备注"><span class="nav-number">1.2.3.</span> <span class="nav-text">备注</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#二、小丸工具箱"><span class="nav-number">2.</span> <span class="nav-text">二、小丸工具箱</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#（一）视频压制参数"><span class="nav-number">2.1.</span> <span class="nav-text">（一）视频压制参数</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#CRF"><span class="nav-number">2.1.1.</span> <span class="nav-text">CRF</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#分辨率"><span class="nav-number">2.1.2.</span> <span class="nav-text">分辨率</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#更多参数"><span class="nav-number">2.1.3.</span> <span class="nav-text">更多参数</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#三、什么是码率？"><span class="nav-number">3.</span> <span class="nav-text">三、什么是码率？</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#四、软件下载"><span class="nav-number">4.</span> <span class="nav-text">四、软件下载</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2019</span>
+  <span class="with-love">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">砺心</span>
+
+  
+</div>
+
+
+  <div class="powered-by">由 <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a> 强力驱动</div>
+
+
+
+  <span class="post-meta-divider">|</span>
+
+
+
+  <div class="theme-info">主题 &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Pisces</a> v5.1.4</div>
+
+
+
+
+        
+<div class="busuanzi-count">
+  <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+  
+    <span class="site-uv">
+      <i class="fa fa-user"></i> 访问人数
+      <span class="busuanzi-value" id="busuanzi_value_site_uv"></span>
+      人
+    </span>
+  
+
+  
+    <span class="site-pv">
+      <i class="fa fa-eye"></i> 总访问量
+      <span class="busuanzi-value" id="busuanzi_value_site_pv"></span>
+      次
+    </span>
+  
+</div>
+
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/canvas-nest/canvas-nest.min.js"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.4"></script>
+
+
+
+  
+  
+
+
+  <script type="text/javascript" src="/js/src/affix.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.1.4"></script>
+
+
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+  <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+  <script src="//unpkg.com/valine/dist/Valine.min.js"></script>
+  
+  <script type="text/javascript">
+    var GUEST = ['nick','mail','link'];
+    var guest = 'nick,mail,link';
+    guest = guest.split(',').filter(item=>{
+      return GUEST.indexOf(item)>-1;
+    });
+    new Valine({
+        el: '#comments' ,
+        verify: false,
+        notify: false,
+        appId: 'YfVCcHfTVwE8JTm2MqmxsFu8-gzGzoHsz',
+        appKey: 'qWc4PDM2ULFFTS3K1099QuWs',
+        placeholder: '记得填写邮箱哦，回复你时才会有提醒~',
+        avatar:'mm',
+        guest_info:guest,
+        pageSize:'10' || 10,
+    });
+  </script>
+
+
+
+  
+
+  <script type="text/javascript">
+    // Popup Window;
+    var isfetched = false;
+    var isXml = true;
+    // Search DB path;
+    var search_path = "search.xml";
+    if (search_path.length === 0) {
+      search_path = "search.xml";
+    } else if (/json$/i.test(search_path)) {
+      isXml = false;
+    }
+    var path = "/" + search_path;
+    // monitor main search box;
+
+    var onPopupClose = function (e) {
+      $('.popup').hide();
+      $('#local-search-input').val('');
+      $('.search-result-list').remove();
+      $('#no-result').remove();
+      $(".local-search-pop-overlay").remove();
+      $('body').css('overflow', '');
+    }
+
+    function proceedsearch() {
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay"></div>')
+        .css('overflow', 'hidden');
+      $('.search-popup-overlay').click(onPopupClose);
+      $('.popup').toggle();
+      var $localSearchInput = $('#local-search-input');
+      $localSearchInput.attr("autocapitalize", "none");
+      $localSearchInput.attr("autocorrect", "off");
+      $localSearchInput.focus();
+    }
+
+    // search function;
+    var searchFunc = function(path, search_id, content_id) {
+      'use strict';
+
+      // start loading animation
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay">' +
+          '<div id="search-loading-icon">' +
+          '<i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>' +
+          '</div>' +
+          '</div>')
+        .css('overflow', 'hidden');
+      $("#search-loading-icon").css('margin', '20% auto 0 auto').css('text-align', 'center');
+
+      $.ajax({
+        url: path,
+        dataType: isXml ? "xml" : "json",
+        async: true,
+        success: function(res) {
+          // get the contents from search data
+          isfetched = true;
+          $('.popup').detach().appendTo('.header-inner');
+          var datas = isXml ? $("entry", res).map(function() {
+            return {
+              title: $("title", this).text(),
+              content: $("content",this).text(),
+              url: $("url" , this).text()
+            };
+          }).get() : res;
+          var input = document.getElementById(search_id);
+          var resultContent = document.getElementById(content_id);
+          var inputEventFunction = function() {
+            var searchText = input.value.trim().toLowerCase();
+            var keywords = searchText.split(/[\s\-]+/);
+            if (keywords.length > 1) {
+              keywords.push(searchText);
+            }
+            var resultItems = [];
+            if (searchText.length > 0) {
+              // perform local searching
+              datas.forEach(function(data) {
+                var isMatch = false;
+                var hitCount = 0;
+                var searchTextCount = 0;
+                var title = data.title.trim();
+                var titleInLowerCase = title.toLowerCase();
+                var content = data.content.trim().replace(/<[^>]+>/g,"");
+                var contentInLowerCase = content.toLowerCase();
+                var articleUrl = decodeURIComponent(data.url);
+                var indexOfTitle = [];
+                var indexOfContent = [];
+                // only match articles with not empty titles
+                if(title != '') {
+                  keywords.forEach(function(keyword) {
+                    function getIndexByWord(word, text, caseSensitive) {
+                      var wordLen = word.length;
+                      if (wordLen === 0) {
+                        return [];
+                      }
+                      var startPosition = 0, position = [], index = [];
+                      if (!caseSensitive) {
+                        text = text.toLowerCase();
+                        word = word.toLowerCase();
+                      }
+                      while ((position = text.indexOf(word, startPosition)) > -1) {
+                        index.push({position: position, word: word});
+                        startPosition = position + wordLen;
+                      }
+                      return index;
+                    }
+
+                    indexOfTitle = indexOfTitle.concat(getIndexByWord(keyword, titleInLowerCase, false));
+                    indexOfContent = indexOfContent.concat(getIndexByWord(keyword, contentInLowerCase, false));
+                  });
+                  if (indexOfTitle.length > 0 || indexOfContent.length > 0) {
+                    isMatch = true;
+                    hitCount = indexOfTitle.length + indexOfContent.length;
+                  }
+                }
+
+                // show search results
+
+                if (isMatch) {
+                  // sort index by position of keyword
+
+                  [indexOfTitle, indexOfContent].forEach(function (index) {
+                    index.sort(function (itemLeft, itemRight) {
+                      if (itemRight.position !== itemLeft.position) {
+                        return itemRight.position - itemLeft.position;
+                      } else {
+                        return itemLeft.word.length - itemRight.word.length;
+                      }
+                    });
+                  });
+
+                  // merge hits into slices
+
+                  function mergeIntoSlice(text, start, end, index) {
+                    var item = index[index.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    var hits = [];
+                    var searchTextCountInSlice = 0;
+                    while (position + word.length <= end && index.length != 0) {
+                      if (word === searchText) {
+                        searchTextCountInSlice++;
+                      }
+                      hits.push({position: position, length: word.length});
+                      var wordEnd = position + word.length;
+
+                      // move to next position of hit
+
+                      index.pop();
+                      while (index.length != 0) {
+                        item = index[index.length - 1];
+                        position = item.position;
+                        word = item.word;
+                        if (wordEnd > position) {
+                          index.pop();
+                        } else {
+                          break;
+                        }
+                      }
+                    }
+                    searchTextCount += searchTextCountInSlice;
+                    return {
+                      hits: hits,
+                      start: start,
+                      end: end,
+                      searchTextCount: searchTextCountInSlice
+                    };
+                  }
+
+                  var slicesOfTitle = [];
+                  if (indexOfTitle.length != 0) {
+                    slicesOfTitle.push(mergeIntoSlice(title, 0, title.length, indexOfTitle));
+                  }
+
+                  var slicesOfContent = [];
+                  while (indexOfContent.length != 0) {
+                    var item = indexOfContent[indexOfContent.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    // cut out 100 characters
+                    var start = position - 20;
+                    var end = position + 80;
+                    if(start < 0){
+                      start = 0;
+                    }
+                    if (end < position + word.length) {
+                      end = position + word.length;
+                    }
+                    if(end > content.length){
+                      end = content.length;
+                    }
+                    slicesOfContent.push(mergeIntoSlice(content, start, end, indexOfContent));
+                  }
+
+                  // sort slices in content by search text's count and hits' count
+
+                  slicesOfContent.sort(function (sliceLeft, sliceRight) {
+                    if (sliceLeft.searchTextCount !== sliceRight.searchTextCount) {
+                      return sliceRight.searchTextCount - sliceLeft.searchTextCount;
+                    } else if (sliceLeft.hits.length !== sliceRight.hits.length) {
+                      return sliceRight.hits.length - sliceLeft.hits.length;
+                    } else {
+                      return sliceLeft.start - sliceRight.start;
+                    }
+                  });
+
+                  // select top N slices in content
+
+                  var upperBound = parseInt('1');
+                  if (upperBound >= 0) {
+                    slicesOfContent = slicesOfContent.slice(0, upperBound);
+                  }
+
+                  // highlight title and content
+
+                  function highlightKeyword(text, slice) {
+                    var result = '';
+                    var prevEnd = slice.start;
+                    slice.hits.forEach(function (hit) {
+                      result += text.substring(prevEnd, hit.position);
+                      var end = hit.position + hit.length;
+                      result += '<b class="search-keyword">' + text.substring(hit.position, end) + '</b>';
+                      prevEnd = end;
+                    });
+                    result += text.substring(prevEnd, slice.end);
+                    return result;
+                  }
+
+                  var resultItem = '';
+
+                  if (slicesOfTitle.length != 0) {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + highlightKeyword(title, slicesOfTitle[0]) + "</a>";
+                  } else {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + title + "</a>";
+                  }
+
+                  slicesOfContent.forEach(function (slice) {
+                    resultItem += "<a href='" + articleUrl + "'>" +
+                      "<p class=\"search-result\">" + highlightKeyword(content, slice) +
+                      "...</p>" + "</a>";
+                  });
+
+                  resultItem += "</li>";
+                  resultItems.push({
+                    item: resultItem,
+                    searchTextCount: searchTextCount,
+                    hitCount: hitCount,
+                    id: resultItems.length
+                  });
+                }
+              })
+            };
+            if (keywords.length === 1 && keywords[0] === "") {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-search fa-5x" /></div>'
+            } else if (resultItems.length === 0) {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-frown-o fa-5x" /></div>'
+            } else {
+              resultItems.sort(function (resultLeft, resultRight) {
+                if (resultLeft.searchTextCount !== resultRight.searchTextCount) {
+                  return resultRight.searchTextCount - resultLeft.searchTextCount;
+                } else if (resultLeft.hitCount !== resultRight.hitCount) {
+                  return resultRight.hitCount - resultLeft.hitCount;
+                } else {
+                  return resultRight.id - resultLeft.id;
+                }
+              });
+              var searchResultList = '<ul class=\"search-result-list\">';
+              resultItems.forEach(function (result) {
+                searchResultList += result.item;
+              })
+              searchResultList += "</ul>";
+              resultContent.innerHTML = searchResultList;
+            }
+          }
+
+          if ('auto' === 'auto') {
+            input.addEventListener('input', inputEventFunction);
+          } else {
+            $('.search-icon').click(inputEventFunction);
+            input.addEventListener('keypress', function (event) {
+              if (event.keyCode === 13) {
+                inputEventFunction();
+              }
+            });
+          }
+
+          // remove loading animation
+          $(".local-search-pop-overlay").remove();
+          $('body').css('overflow', '');
+
+          proceedsearch();
+        }
+      });
+    }
+
+    // handle and trigger popup window;
+    $('.popup-trigger').click(function(e) {
+      e.stopPropagation();
+      if (isfetched === false) {
+        searchFunc(path, 'local-search-input', 'local-search-result');
+      } else {
+        proceedsearch();
+      };
+    });
+
+    $('.popup-btn-close').click(onPopupClose);
+    $('.popup').click(function(e){
+      e.stopPropagation();
+    });
+    $(document).on('keyup', function (event) {
+      var shouldDismissSearchPopup = event.which === 27 &&
+        $('.search-popup').is(':visible');
+      if (shouldDismissSearchPopup) {
+        onPopupClose();
+      }
+    });
+  </script>
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>
